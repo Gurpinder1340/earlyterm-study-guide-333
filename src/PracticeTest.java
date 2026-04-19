@@ -18,9 +18,40 @@ public class PracticeTest {
         assertEquals(14, actual);
     }
     
+        @Test
+        void testMaxDiffAllPositive() {
+            // Arrange 
+            int [] numbers = {3, 7, 1, 9, 4};
 
-    // TODO: Make tests for each problem you solve
-    
+            // Act
+            int actual = Practice.maxDiff(numbers);
+
+            // Assert
+            assertEquals(8, actual);
+
+        }
+
+        @Test
+        void testMaxDiffAllNegative() {
+            // Arrange 
+            int [] numbers = {-5, -3, -7};
+
+            // Act
+            int actual = Practice.maxDiff(numbers);
+
+
+            // Assert
+            assertEquals(4, actual);
+
+        }
+
+
+
+
+
+
+
+
 }
 
 
