@@ -94,7 +94,22 @@ public class PracticeTest {
         assertEquals(-3, actual);
     }
 
+    @Test
+    void testSecondLargest() {
+        // Arrange
+        HashMap<Integer, String> map = new HashMap<>();
+        map.put(10, "a");
+        map.put(20, "b");
+        map.put(15, "c");
 
+
+        //Act 
+        int actual = Practice.secondLargest(map);
+
+
+        // Assert
+        assertEquals(15, actual);
+    }
 
 }
 

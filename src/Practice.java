@@ -71,6 +71,23 @@ public static int oddEvenDiff(HashMap<String, Integer> map) {
     
     }
 
+// HashMap (keys)
+public static int secondLargest(HashMap<Integer, String> map) {
+    int first = Integer.MIN_VALUE;
+    int second = Integer. MIN_VALUE;
+
+    for (int key : map.keySet()) {
+        if (key > first) {
+            second = first;
+            first = key;
+
+        } else if (key > second) {
+            second = key;
+        }
+    }
+
+    return second;
+}
 
     
 
