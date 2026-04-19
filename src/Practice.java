@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Practice {
 
@@ -38,6 +39,20 @@ public class Practice {
         return longest;
     }
 
-    
-} 
+// HashSet
+public static int countWords(HashSet<String> words, int n, int m) {
+        int count = 0;
+
+        for (String word : words) {
+            if (word.length() > n && word.length() < m) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+}
+
+
 

@@ -1,6 +1,7 @@
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 import org.junit.jupiter.api.Test;
 
@@ -59,7 +60,22 @@ public class PracticeTest {
     }
 
 
+    @Test
+    void testCountWords() {
+        // Arrange
+    HashSet<String> words = new HashSet<>();
+    words.add("hi");        
+    words.add("hey");      
+    words.add("hello");     
+    words.add("helicopter");  
 
+        // Act
+        int actual = Practice.countWords(words, 2, 6);
+
+        
+        // Assert
+        assertEquals(2, actual);
+    }
 
 
 
