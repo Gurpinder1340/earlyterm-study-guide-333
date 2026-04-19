@@ -1,5 +1,7 @@
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
+
 import org.junit.jupiter.api.Test;
 
 public class PracticeTest {
@@ -45,7 +47,16 @@ public class PracticeTest {
 
         }
 
-
+    @Test
+    void testLongestWordBasic() {
+        ArrayList<String> words = new ArrayList<>();
+        words.add("banana");
+        words.add("apple");
+        words.add("blueberry");
+        words.add("bat");
+        String actual = Practice.longestWord(words, 'b');
+        assertEquals("blueberry", actual);
+    }
 
 
 

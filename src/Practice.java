@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Practice {
 
@@ -22,8 +23,21 @@ public class Practice {
         return max - min;
     }
 
+// ArrayList
+    public static String longestWord(ArrayList<String> words, char letter) {
+        String longest = "";
 
+        for (String word : words) {
+            if (word.charAt(0) == letter) {
+                if (word.length() > longest.length()) {
+                    longest = word;
+                }
+            }
+        }
 
+        return longest;
+    }
 
+    
+} 
 
-}  
