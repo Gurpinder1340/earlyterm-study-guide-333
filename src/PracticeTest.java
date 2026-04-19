@@ -1,7 +1,7 @@
 import static org.junit.Assert.*;
-
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.HashMap;
 
 import org.junit.jupiter.api.Test;
 
@@ -75,6 +75,23 @@ public class PracticeTest {
         
         // Assert
         assertEquals(2, actual);
+    }
+
+    @Test 
+    void testOddEvenDiffAllEven() {
+        // Arrange
+        HashMap<String, Integer> map = new HashMap<>();
+        map.put("a", 2);
+        map.put("b", 4);
+        map.put("c", 6);
+
+        // Act
+        int actual = Practice.oddEvenDiff(map);
+
+
+
+        // Assert
+        assertEquals(-3, actual);
     }
 
 

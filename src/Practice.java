@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.HashMap;
 
 public class Practice {
 
@@ -52,7 +53,29 @@ public static int countWords(HashSet<String> words, int n, int m) {
         return count;
     }
 
+
+// HashMap
+public static int oddEvenDiff(HashMap<String, Integer> map) {
+        int oddCount = 0;
+        int evenCount = 0;
+
+        for (int val : map.values()) {
+            if (val % 2 == 0) {
+                evenCount++;
+            } else {
+                oddCount++;
+            }
+        }
+
+        return oddCount - evenCount;
+    
+    }
+
+
+    
+
 }
+
 
 
 
